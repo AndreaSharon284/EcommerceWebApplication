@@ -1,6 +1,10 @@
-namespace eCommerceApp.Application.DTOs.Product;
 
-public class CreateProduct
+namespace eCommerceApp.Application.DTOs.Product
 {
+    public class CreateProduct : ProductBase
+    {
+        
+    }
     
 }
+

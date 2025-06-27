@@ -1,6 +1,13 @@
-namespace eCommerceApp.Application.DTOs.Product;
+using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
 
-public class UpdateCategory : CategoryBase
+namespace eCommerceApp.Application.DTOs.Catagory
 {
-    public  Guid Id { get; set; }
+    public class UpdateCategory : CategoryBase
+    {
+        [Required]
+        public  Guid Id { get; set; }
+    }
 }
+
+

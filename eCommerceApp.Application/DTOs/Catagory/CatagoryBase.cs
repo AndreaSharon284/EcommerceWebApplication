@@ -1,6 +1,12 @@
-namespace eCommerceApp.Application.DTOs.Product;
 
-public class CategoryBase
+using System.ComponentModel.DataAnnotations;
+
+namespace eCommerceApp.Application.DTOs.Catagory
 {
-    public string? Name { get; set; }
+    public class CategoryBase
+    {
+        [Required]
+        public string? Name { get; set; }
+    }
 }
+

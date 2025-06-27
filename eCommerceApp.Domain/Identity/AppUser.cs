@@ -1,6 +1,10 @@
-namespace eCommerceApp.Domain.Identity;
+using Microsoft.AspNetCore.Identity;
 
-public class AppUser
+namespace eCommerceApp.Domain.Identity
 {
-    
+    public class AppUser : IdentityUser
+    {
+        public string FullName { get; set; } = string.Empty;
+    }
 }
+

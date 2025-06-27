@@ -1,6 +1,7 @@
-namespace eCommerceApp.Application.DTOs.Product;
-
-public class CreateCategory : CategoryBase
+namespace eCommerceApp.Application.DTOs.Catagory
 {
-    
+    public class CreateCategory : CategoryBase
+    {
+    }
 }
+
