@@ -1,5 +1,5 @@
 using System.Security.Claims;
-using eCommerceApp.Domain.Identity;
+using eCommerceApp.Domain.Entities.Identity;
 
 namespace eCommerceApp.Domain.Interfaces.Authentication
 {
@@ -11,7 +11,7 @@ namespace eCommerceApp.Domain.Interfaces.Authentication
         Task<AppUser> GetUserById(string id);
         Task<IEnumerable<AppUser>?> GetAllUsers();
         Task<int> RemoveUserByEmail(string email);
-        Task<List<Claim>> GetAllClaims(string email);
+        Task<List<Claim>> GetUserClaims(string email);
     }
 }
 

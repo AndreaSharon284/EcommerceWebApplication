@@ -1,5 +1,5 @@
 using System.Security.Claims;
-using eCommerceApp.Domain.Identity;
+using eCommerceApp.Domain.Entities.Identity;
 
 namespace eCommerceApp.Domain.Interfaces.Authentication
 {
