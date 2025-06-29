@@ -1,10 +1,13 @@
 using eCommerceApp.Application.DTOs;
 using eCommerceApp.Application.DTOs.Identity;
 using eCommerceApp.Application.Services.Interfaces.Authentication;
+using eCommerceApp.Application.Services.Interfaces.Logging;
+using eCommerceApp.Domain.Interfaces.Authentication;
 
 namespace eCommerceApp.Application.Services.Implementations.Authentication;
 
-public class AuthenticationService : IAuthenticationService
+public class AuthenticationService(ITokenManagement tokenManagement, IUserManagement userManagement,
+    IRoleManagement roleManagement, IApplogger<AuthenticationService> logger) : IAuthenticationService
 {
     public Task<ServiceResponse> CreateUser(CreateUser user)
     {
